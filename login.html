@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="flex flex-col bg-slate-900 text-white h-full m-auto">  <!-- Container -->
+        <div class="flex flex-row justify-between h-24 w-full h-full p-5 bg-slate-700"> <!-- Navbar -->
+            <div class="w-1/5">  <!-- Nav linkerkant -->
+                <p>Logo</p>
+            </div>
+            <div class="flex flex-row justify-between w-1/6">  <!-- Nav rechterkant -->
+                <a href="index.html">Home</a>
+                <p>Login</p>
+            </div>
+        </div>
+        <div class="flex justify-center flex-col text-center pt-20 pb-72">  <!-- Content -->
+            <h1 class="text-5xl">Login</h1>
+            <form id="form" class="pt-20" action="account.html">
+                <label for="gebruikersnaam">Gebruikersnaam</label><br>
+                <input id="gebruikersnaam" name="gebruikersnaam" type="text" class="text-black" required><br>
+
+                <label for="wachtwoord">Wachtwoord</label><br>
+                <input id="wachtwoord" name="wachtwoord" type="text" class="text-black" required><br><br>
+
+                <p>Welk abonnement heb je?</p><br>
+
+                <input type="checkbox" id="abo1" name="abo1" value="Abonnement 1">
+                <label for="abo1">Regulier</label><br>
+
+                <input type="checkbox" id="abo2" name="abo2" value="Abonnement 2">
+                <label for="abo1">Jaarlijks</label><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <footer class="text-center p-2 bg-slate-700">
+            <p>Sportschool De Kast - All Rights Reserved</p>
+          </footer>
+    </div>
+</body>
+</html>
