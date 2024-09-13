@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="flex flex-col bg-slate-900 text-white h-full m-auto">  <!-- Container -->
+        <div class="flex flex-row justify-between h-24 w-full h-full p-5 bg-slate-700"> <!-- Navbar -->
+            <div class="w-1/5">  <!-- Nav linkerkant -->
+                <p>Logo</p>
+            </div>
+            <div class="flex flex-row justify-between w-2/5">  <!-- Nav rechterkant -->
+                <a href="index.html">Home</a>
+                <p>Abonnementen</p>
+                <p>Cursussen</p>
+                <p>Personal Training</p>
+                <p>Account</p>
+            </div>
+        </div>
+        <div class="flex justify-center flex-col text-center pt-20 pb-72">  <!-- Content -->
+            <h1 class="text-5xl">Login</h1>
+            <form class="pt-16">
+                <label for="gebruikersnaam">Wat is je gebruikersnaam?</label><br>
+                <input class="text-black p-2" type="text" id="gebruikersnaam" name="gebruikersnaam"><br><br>
+
+                <label for="wachtwoord">Wat is je wachtwoord?</label><br>
+                <input class="text-black p-2" type="text" id="wachtwoord" name="wachtwoord"><br><br>
+
+                <label for="abonnement">Welk abonnement bezit je?</label><br>
+
+                <input type="radio" id="abo1" name="abonnement" value="Abonnement 1">
+                <label for="abo1">Abonnement type 1</label><br>
+                <input type="radio" id="abo2" name="fav_language" value="Abonnement 2">
+                <label for="abo2">Abonnement type 2</label><br>
+                <input type="radio" id="abo3" name="fav_language" value="Abonnement 3">
+                <label for="abo3">Abonnement type 3</label><br><br><br>
+
+                <input type="submit" value="Submit">
+              </form>
+            <p class="text-xl pt-24" id="uitkomst_tekst"></p>
+        </div>
+        <footer class="text-center p-2 bg-slate-700">
+            <p>Sportschool De Kast - All Rights Reserved</p>
+          </footer>
+    </div>
+</body>
+</html>
